@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+        <ImageView android:id="@+id/fotoImageView"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:layout_weight="1"
+            />
+        <TableLayout
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TableRow>
+                        <TextView android:id="@+id/titulo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Nombre: "
+                            android:textStyle="bold"
+                            android:ellipsize="end" />
+
+                        <TextView android:id="@+id/nombreRow"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end" />
+                </TableRow>
+                <TableRow>
+                        <TextView android:id="@+id/dir"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:text="Perfil profecional: "
+                            android:ellipsize="end" />
+
+                        <TextView android:id="@+id/perfilRow"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end"
+                            />
+                </TableRow>
+                <TableRow>
+                        <TextView android:id="@+id/sexoLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:text="Sexo: "
+                            android:textStyle="bold"
+                            />
+                        <TextView android:id="@+id/sexoRow"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end"
+                            />
+                </TableRow>
+        </TableLayout>
+</RelativeLayout>
